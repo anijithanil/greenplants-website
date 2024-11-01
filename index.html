@@ -23,9 +23,13 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="overflow-x-hidden max-sm:overflow-x-hidden  overflow-y-auto max-sm:h-auto">
+  <body
+    class="overflow-x-hidden max-sm:overflow-x-hidden overflow-y-auto max-sm:h-auto"
+  >
     <!-- header section -->
-    <div class="header bg-lime-950 w-screen h-16 px-32 max-sm:px-8 fixed">
+    <div
+      class="header bg-lime-950 w-screen h-16 px-32 max-sm:px-8 z-10 fixed top-0"
+    >
       <nav class="flex justify-between items-center pt-4">
         <div class="logo text-white">
           <h3 class="font-mono font-bold text-lg max-sm:text-sm">
@@ -39,19 +43,24 @@
             <li class="text-white mr-4">Popular</li>
             <li class="text-white mr-4">Review</li>
           </ul>
-
         </div>
       </nav>
-                <!-- menu-toggle for mobile -->
-          <!-- Hidden Checkbox to Toggle Menu -->
-          <input type="checkbox" id="menu-toggle" class="hidden" />
-          <label id="menu"
-            for="menu-toggle"
-            class=" text-white font-bold text-2xl fa-solid fa-bars cursor-pointer hidden max-sm:block absolute top-3 right-9"
-          ></label>
+      <!-- menu-toggle for mobile -->
+      <!-- Hidden Checkbox to Toggle Menu -->
+      <input type="checkbox" id="menu-toggle" class="hidden" />
+      <label
+        id="menu"
+        for="menu-toggle"
+        class="text-white font-bold text-2xl fa-solid fa-bars cursor-pointer hidden max-sm:block absolute top-3 right-9"
+      ></label>
       <!-- overlay menu items-in toggle -->
-      <div  id="overlay" class="max-sm:w-screen max-sm:flex hidden inset-0 bg-black h-4/6  bg-opacity-75 fixed z-50 flex flex-col justify-between items-center transition-all duration-300 transform opacity-0 ">
-        <ul class="text-white font-bold text-lg font-mono text-center space-y-8 mt-20">
+      <div
+        id="overlay"
+        class="max-sm:w-screen max-sm:flex hidden inset-0 bg-black h-4/6 bg-opacity-75 fixed z-50 flex flex-col justify-between items-center transition-all duration-300 transform opacity-0"
+      >
+        <ul
+          class="text-white font-bold text-lg font-mono text-center space-y-8 mt-20"
+        >
           <li>Home</li>
           <li>About</li>
           <li>Popular</li>
@@ -60,7 +69,10 @@
 
           <!-- close button -->
         </ul>
-        <label for="menu-toggle" class="fa-solid fa-xmark my-6 text-white text-2xl"></label>
+        <label
+          for="menu-toggle"
+          class="fa-solid fa-xmark my-6 text-white text-2xl"
+        ></label>
       </div>
     </div>
 
@@ -68,8 +80,12 @@
     <div
       class="w-screen min-h-screen bg-gradient-to-r from-lime-900 via-lime-700 to-lime-900 px-32 pt-28 flex max-sm:px-8 max-sm:flex max-sm:flex-col max-sm:justify-right max-sm:items-center max-sm:pt-16 max-sm:h-96"
     >
-      <div class="w-3/6 max-sm:w-full max-sm:mx-auto max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:text-center">
-        <h1 class="text-4xl font-bold text-white w-3/6 max-sm:text-3xl max-sm:w-full max-sm:mt-16">
+      <div
+        class="w-3/6 max-sm:w-full max-sm:mx-auto max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:text-center"
+      >
+        <h1
+          class="text-4xl font-bold text-white w-3/6 max-sm:text-3xl max-sm:w-full max-sm:mt-16"
+        >
           <span class="text-orange-300">Plants</span> make positive
           <span class="text-orange-300">impact</span> on your environment
         </h1>
@@ -99,12 +115,152 @@
           <i class="fa-brands fa-linkedin mx-2"></i>
         </div>
       </div>
-      <div class="w-3/6 pb-4 max-sm:w-full  max-sm:flex max-sm:justify-center max-sm:h-auto ">
-        <img class="w-5/6 md:ml-36  max-sm:h-auto object-contain object-cover max-sm:w-full" src="./images/home.png" alt="" />
+      <div
+        class="w-3/6 pb-4 max-sm:w-full max-sm:flex max-sm:justify-center max-sm:h-auto"
+      >
+        <img
+          class="w-5/6 md:ml-36 max-sm:h-auto object-contain object-cover max-sm:w-full"
+          src="./images/home.png"
+          alt=""
+        />
       </div>
     </div>
 
-    <!--  -->
-    
+    <!-- card section -->
+    <div
+      id="card section"
+      class="w-full h-56 bg-slate-200 px-4 py-4 flex justify-evenly items-center max-sm:flex max-sm:flex-col max-sm:justify-around max-sm:items-center max-sm:h-auto"
+    >
+      <!-- card1 -->
+      <div
+        class="border border-teal-800 w-64 h-40 px-4 py-4 text-lime-950 max-sm:px-2 max-sm:py-2 max-sm:my-3"
+      >
+        <div class="flex justify-center items-center">
+          <i class="fa-solid fa-truck mr-3 text-4xl"></i>
+          <p class="font-bold">Fast Delivery</p>
+        </div>
+        <div class="text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            asperiores!
+          </p>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div
+        class="border border-teal-800 w-64 h-40 px-4 py-4 text-lime-950 max-sm:my-3"
+      >
+        <div class="flex justify-center items-center">
+          <i class="fa-solid fa-headphones mr-3 text-4xl"></i>
+          <p class="font-bold">Great Customer Service</p>
+        </div>
+        <div class="text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            asperiores!
+          </p>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div
+        class="border border-teal-800 w-64 h-40 px-4 py-4 text-lime-950 max-sm:my-3"
+      >
+        <div class="flex justify-center items-center">
+          <i class="fa-solid fa-plant-wilt mr-3 text-4xl"></i>
+          <p class="font-bold">Original Plants</p>
+        </div>
+        <div class="text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            asperiores!
+          </p>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div
+        class="border border-teal-800 w-64 h-40 px-4 py-4 text-lime-950 max-sm:my-3"
+      >
+        <div class="flex justify-center items-center">
+          <i class="fa-solid fa-indian-rupee-sign mr-3 text-4xl"></i>
+          <p class="font-bold">Affordable Price</p>
+        </div>
+        <div class="text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            asperiores!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div
+      id="about-section"
+      class="w-full h-full relative bg-gradient-to-r from-lime-800 via-lime-700 to-lime-800"
+    >
+      <!-- about sec-1 -->
+      <div class="flex justify-center items-center pt-10">
+        <div class="text-center mt-9">
+          <h2 class="font-bold text-orange-300 text-3xl">About Us</h2>
+          <p class="text-white font-bold">Follow Instruction for more</p>
+        </div>
+        <div class="w-40 absolute right-64 top-0">
+          <img src="./images/leaf-3.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="flex justify-center items-center w-full ml-20 max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:ml-0"
+      >
+        <div class="w-96 max-sm:w-full">
+          <img
+            class="w-full object-contain object-cover"
+            src="./images/plant-2.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-[40rem] ml-0 max-sm:w-full max-sm:text-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center"
+        >
+          <h1 class="font-bold text-white text-2xl w-64 my-4 max-sm:">
+            Make your <span class="text-orange-300">organic</span> garden
+          </h1>
+          <p class="text-white max-sm:mx-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            aut tempore quod, iste alias nisi quas soluta incidunt amet
+            deserunt!Lorem lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Deserunt quisquam nesciunt beatae impedit aliquid laboriosam
+            ducimus adipisci ab molestias repudiandae.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div
+          class="flex justify-center items-center w-full ml-20 max-sm:flex max-sm:flex-col-reverse max-sm:justify-center max-sm:items-center max-sm:ml-0"
+        >
+          <div
+            class="w-[40rem] ml-0 max-sm:w-full max-sm:text-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center"
+          >
+            <h1 class="font-bold text-white text-2xl w-64 my-4 max-sm:">
+              Come with us <span class="text-orange-300">grow up</span> your
+              plant
+            </h1>
+            <p class="text-white max-sm:mx-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum aut tempore quod, iste alias nisi quas soluta incidunt
+              amet deserunt!Loremctetur adipisicing elit. Deserunt quisquam
+              nesciunt beatae impedit aliquid laboriosam ducimus adipisci ab
+              molestias repudiandae.
+            </p>
+          </div>
+          <div class="w-96 max-sm:w-full">
+            <img
+              class="w-full object-contain object-cover"
+              src="./images/plant-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
