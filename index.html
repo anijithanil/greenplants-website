@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- header section -->
+    <div class="header bg-lime-950 w-screen h-16 px-32 max-sm:px-8">
+      <nav class="flex justify-between items-center pt-4">
+        <div class="logo text-white">
+          <h3 class="font-mono font-bold text-lg max-sm:text-sm">
+            Indoor Plants
+          </h3>
+        </div>
+        <div class="nav-items font-mono">
+          <ul class="flex justify-evenly items-center max-sm:hidden">
+            <li class="text-white mr-4">Home</li>
+            <li class="text-white mr-4">About</li>
+            <li class="text-white mr-4">Popular</li>
+            <li class="text-white mr-4">Review</li>
+          </ul>
+
+        </div>
+      </nav>
+                <!-- menu-toggle for mobile -->
+          <!-- Hidden Checkbox to Toggle Menu -->
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label id="menu"
+            for="menu-toggle"
+            class=" text-white font-bold text-2xl fa-solid fa-bars cursor-pointer hidden max-sm:block absolute top-3 right-9"
+          ></label>
+      <!-- overlay menu items-in toggle -->
+      <div  id="overlay" class="max-sm:flex hidden inset-0 bg-black h-4/6  bg-opacity-75 fixed z-50 flex flex-col justify-between items-center transition-all duration-300 transform opacity-0 ">
+        <ul class="text-white font-bold text-lg font-mono text-center space-y-8 mt-20">
+          <li>Home</li>
+          <li>About</li>
+          <li>Popular</li>
+          <li>Review</li>
+          <li>Contact</li>
+
+          <!-- close button -->
+        </ul>
+        <label for="menu-toggle" class="fa-solid fa-xmark my-6 text-white text-2xl"></label>
+      </div>
+    </div>
+    <!-- bannersection -->
+    <div
+      class="w-full h-screen bg-gradient-to-r from-lime-900 via-lime-700 to-lime-900 px-32 pt-28 flex max-sm:px-8 max-sm:flex-col max-sm:pt-16 max-sm:h-max"
+    >
+      <div class="w-3/6 max-sm:w-screen max-sm:mx-10">
+        <h1 class="text-4xl font-bold text-white w-3/6 max-sm:text-3xl max-sm:w-4/6">
+          <span class="text-orange-300">Plants</span> make positive
+          <span class="text-orange-300">impact</span> on your environment
+        </h1>
+        <p class="font-mono font-thin text-white mt-4 max-sm:w-4/6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
+          quidem accusamus laboriosam! Rerum, maxime quo molestias fugiat
+          reprehenderit, ab voluptatibus eligendi doloribus! At quaerat quos
+          dicta!
+        </p>
+        <div class="mt-8">
+          <button class="px-2.5 py-1.5 bg-amber-400 text-white rounded">
+            Shop now 🌿
+          </button>
+          <button
+            class="text-white border px-2.5 py-1.5 border-orange-300 rounded ml-2"
+          >
+            Know More 🌿
+          </button>
+        </div>
+        <p class="text-gray-200 font-mono mt-4">
+          you will get 30-days free trial.
+        </p>
+        <div class="text-gray-400 mt-6">
+          <i class="fa-brands fa-facebook mx-2"></i>
+          <i class="fa-brands fa-square-threads mx-2"></i>
+          <i class="fa-brands fa-instagram mx-2"></i>
+          <i class="fa-brands fa-linkedin mx-2"></i>
+        </div>
+      </div>
+      <div class="w-3/6 pb-4 max-sm:w-screen ">
+        <img class="w-4/6 md:ml-36 " src="./images/home.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
