@@ -25,3 +25,6 @@
 body,html {
   overflow-x: hidden;
 }
+.checked {
+  color: orange;
+}
